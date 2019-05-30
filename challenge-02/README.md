@@ -41,17 +41,13 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-function somandoValores(x=[]){
-	if(x[0] === undefined || x[1] ===undefined || x[2] === undefined){
-		console.log("Preencha todos os valores corretamente!")
-	}
-	else{
-		var a = +x[0]
-		var b = +x[1]
-		var c = +x[2]
-		return(a + b + c +2)
-		}
- }
+function newFunction1(a,b,c){
+    if(a === undefined || b === undefined, c ===undefined){
+        return "preencha todos os valores coretmente"
+    }else{
+        return (a * b * c) +2
+    }
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
 
