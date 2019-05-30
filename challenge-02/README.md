@@ -75,8 +75,37 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+function somandoValores(x=[]){
+	if(x.length === 1 ){
+		return(x[0])
+	}else if (x.length === 2 ){
+		return(x[1] + x[0])
+	}else if (x.length === 3 ){
+		return((x[1] + x[0])/x[2])
+	}else if (x.length === 0 ){
+		return(false)
+	}else{
+	
+		return(null)
+	}
+	
+	
+ }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
-```
+
+
+> somandoValores([1])
+1
+> somandoValores([1,1])
+2
+> somandoValores([5,5,2])
+5
+> somandoValores([])
+false
+> somandoValores()
+false
+> somandoValores(1,2,3,4,5)
+null
+>
+
